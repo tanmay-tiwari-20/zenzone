@@ -1,0 +1,60 @@
+body{
+  scroll-behavior: smooth;
+}
+.navbar {
+    /* background-color: #ffffff; */
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    align-items: center;
+  }
+  .logo{
+    display: flex;
+    align-items: center;
+  }
+  .logo img {
+    height: 90px; /* Adjust height as needed */
+    transform: translate(0px 15px);
+  }
+  
+  .menu-items ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    font-size: 21px;
+    font-family: Poppins, arial;
+  }
+  
+  .menu-items ul li {
+    margin-right: 30px; /* Adjust spacing between menu items */
+  }
+  
+  .menu-items ul li:last-child {
+    margin-right: 0; /* Remove margin for last menu item */
+  }
+  
+  .menu-items ul li a {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  .community-btn .btn {
+    padding: 10px 15px;
+    /* background-color: white; */
+    color: #316655;
+    font-weight: 500;
+    text-decoration: none;
+    border: 2px solid #316655;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px ;
+    font-family: Poppins, arial;
+  }
+  
+  .community-btn .btn:hover {
+    background-color: #316655;
+    color: white;
+    transition: background-color 0.5s;
+
+  }

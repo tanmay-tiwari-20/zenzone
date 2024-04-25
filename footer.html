@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project footer</title>
+    <link rel="stylesheet" href="stylesheets/footer.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Inter:wght@100..900&family=Itim&display=swap" rel="stylesheet">
+</head>
+<body>
+    <footer id="page-footer">
+        <section class="page-footer-section" id="section-1">
+            <div id="logo-div-1">
+                <img id="logo-img" src="images/ZenZone logo.png" alt="ZenZone-logo">
+                <div id="logo-div-2">
+                    <h1 id="zen-name">ZenZone</h1>
+                    <p id="zen-slogan">Find Your Zen, Find Yourself</p>
+                </div>
+            </div>
+            <div class="about-zen">
+                <p id="about-zen-para">
+                    We are mental health experienced therapists that are passsionate about our goal on empowering you mentally with our wellness journey.
+                </p>
+            </div>
+            <input placeholder="Enter email address for newsletter..." type="text" id="footer-button">
+            <p id="input-arrow"><i class="fa-solid fa-arrow-right-long"></i></p>
+        </section>
+        <section class="page-footer-section" id="section-2">
+            <div class="footer-2-content">
+                <p>About Us</p>
+                <p>Our Stories</p>
+                <p>Career</p>
+                <p>Testimonials</p>
+            </div>
+            <div class="footer-2-content">
+                <p>FAQ</p>
+                <p>Price List</p>
+                <p>User Policy</p>
+                <p>Support</p>
+            </div>
+            <div class="footer-2-content">
+                <p>Phone</p>
+                <p>Email</p>
+                <p>Location</p>
+                <p>Social Media</p>
+            </div>
+            <div id="copyright-msg" class="footer-2-content">
+                <p>Copyright <i id="Copyright-sym" class="fa-regular fa-copyright"></i> ZenZone 2024 </p>
+            </div>
+            <button id="button-b-t-t">Back to Top</button>
+        </section>
+    </footer>
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {
+        scrollFunction();
+      };
+      
+      function scrollFunction() {
+        var button = document.getElementById("button-b-t-t");
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          button.style.display = "block";
+        } else {
+          button.style.display = "none";
+        }
+      }
+      
+      // When the user clicks on the button, scroll to the top of the document
+      document.getElementById("button-b-t-t").addEventListener("click", function() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      
+      
+        if (document.documentElement.scrollTop > 0) {
+          window.scroll({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+          });
+        }
+      });
+      </script>
+</body>
+</html>
